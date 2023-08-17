@@ -1,6 +1,7 @@
 import requests
 import urllib.request
 import datetime
+import streamlit
 
 # Configuracao da URL
 url = "https://br.investing.com/currencies/usd-brl"
