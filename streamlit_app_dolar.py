@@ -41,20 +41,24 @@ saida_UTC = datetime.datetime.strptime(saida_UTC, "%Y-%m-%dT%H:%M:%S.%fZ").strft
 )
 
 
-print(
-    "\n",
-    "Horário atual:",
-    hora_atual,
-    "\n",
-    "Horário UTC:",
-    saida_UTC,
-    "\n",
-    "Horário Brasília:",
-    saida_BR,
-    "\n",
-    "Cotação:",
-    valor,
-)
+#print(
+ #   "\n",
+ #   "Horário atual:",
+ #   hora_atual,
+ #   "\n",
+ #   "Horário UTC:",
+ #   saida_UTC,
+ #   "\n",
+ #   "Horário Brasília:",
+ #   saida_BR,
+ #   "\n",
+ #   "Cotação:",
+ #   valor,
+#)
 
 
 #UTC_timezone
+
+streamlit.header("Cotação do dólar")
+streamlit.text(saida_utc)
+streamlit.text(valor)
